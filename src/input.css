@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger-line {
+    @apply w-[40px] h-[2px] my-2.5 block bg-green-900;
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply translate-y-[12px]; /* Move both the top and bottom lines to the center */
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply -translate-y-[12px];
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply opacity-100; /* Ensure the middle line is fully visible */
+}
+
+.instagramcolor{
+    background-color: #e1306c;
+}
+
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-prev, .swiper-button-next {
+  color: rgb(20, 83, 45) !important;            
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6; 
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+
+.instagram:hover{
+    background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.text-shadow-white {
+    text-shadow: 1px 1px 5px rgba(20, 83, 45, 0.75), 
+                 0 0 3px rgba(20, 83, 45, 0.5);
+}
