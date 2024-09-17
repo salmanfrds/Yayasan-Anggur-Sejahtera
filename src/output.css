@@ -554,6 +554,40 @@ video {
   --tw-contain-style:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -685,6 +719,15 @@ video {
   max-height: 5rem;
 }
 
+.max-h-96 {
+  max-height: 24rem;
+}
+
+.max-h-fit {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -735,6 +778,39 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.max-w-5 {
+  max-width: 1.25rem;
+}
+
+.max-w-52 {
+  max-width: 13rem;
+}
+
+.max-w-56 {
+  max-width: 14rem;
+}
+
+.max-w-6 {
+  max-width: 1.5rem;
+}
+
+.max-w-64 {
+  max-width: 16rem;
+}
+
+.max-w-72 {
+  max-width: 18rem;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .cursor-pointer {
@@ -1245,6 +1321,15 @@ b{
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+.swiper-slide iframe {
+  width: 100%;
+  /* Full width */
+  aspect-ratio: 9 / 16;
+  /* Maintain 9:16 aspect ratio */
+  border: none;
+  /* Remove border */
 }
 
 .hover\:border-green-900:hover {

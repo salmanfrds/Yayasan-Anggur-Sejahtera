@@ -67,3 +67,9 @@ b{
     font-weight: 300;
     font-style: normal;
 }
+
+.swiper-slide iframe {
+    width: 100%;               /* Full width */
+    aspect-ratio: 9 / 16;       /* Maintain 9:16 aspect ratio */
+    border: none;               /* Remove border */
+}
