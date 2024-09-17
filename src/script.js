@@ -41,7 +41,7 @@ const swiperHome = new Swiper('.swiper-home', {
 const swiperProgram = new Swiper('.swiper-program', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   autoplay: false,
 
   // If we need pagination
