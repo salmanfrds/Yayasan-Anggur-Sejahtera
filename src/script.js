@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: false,
+    loop: true,
     
     // If we need pagination
     pagination: {
@@ -27,6 +27,10 @@ const swiper = new Swiper('.swiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
     },
 
     autoplay: {

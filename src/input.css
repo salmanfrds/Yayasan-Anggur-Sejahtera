@@ -67,11 +67,3 @@ b{
     font-weight: 300;
     font-style: normal;
 }
-
-.swiper-pagination-bullet-active {
-    background-color:rgb(20, 83, 45)!important;
-}
-
-.swiper-pagination-bullets-dynamic{
-    background-color: rgb(243, 244, 246);
-}
