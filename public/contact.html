@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yayasan Anggur Sejahtera</title>
+
+    <!-- Styling CSS -->
+    <link href="../src/output.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="../src/script.js" defer></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f91ffb7c10.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="../src/swiper-bundle.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header class="bg-white bg-opacity-80 backdrop-blur flex p-1 py-1 px-4 md:py-0 md:p-0 md:px-4 items-center justify-between fixed top-0 left-0 w-full z-30 shadow-md">
+        <a href="index.html"><img src="../src/gallery/yasi-logo.png" alt="image not found" class=" w-20 md:w-[72px] xl:w-24 xl:py-1 items-center justify-center md:mr-3 xl:mr-1 rounded-md"></a>
+        <nav class="hidden md:flex gap-1">
+            <a class="text-zinc-800 text-base xl:text-xl hover:text-green-900 hover:bg-gray-200 py-5 px-2 transition-all ease-in-out duration-200 border-b-2 border-white hover:border-opacity-100 hover:border-green-900" href="about.html">TENTANG KAMI</a>
+            <a class="text-zinc-800 text-base xl:text-xl hover:text-green-900 hover:bg-gray-200 py-5 px-2 transition-all ease-in-out duration-200 border-b-2 border-white hover:border-opacity-100 hover:border-green-900" href="program.html">PROGRAM</a>
+            <a class="text-zinc-800 text-base xl:text-xl hover:text-green-900 hover:bg-gray-200 py-5 px-2 transition-all ease-in-out duration-200 border-b-2 border-white hover:border-opacity-100 hover:border-green-900" href="article.html">ARTIKEL</a>
+            <a class="text-zinc-800 text-base xl:text-xl hover:text-green-900 hover:bg-gray-200 py-5 px-2 transition-all ease-in-out duration-200 border-b-2 border-white hover:border-opacity-100 hover:border-green-900" href="contact.html">KONTAK</a>
+        </nav>
+        <div class="hidden md:flex gap-2">
+            <a href="http://www.youtube.com/@dineugarden8711"><i class="fa-brands fa-youtube fa-xl text-green-900 py-5 px-[7px] rounded-full bg-zinc-300 hover:bg-red-500 hover:text-white shadow-lg transition ease-in-out duration-300"></i></a>
+            <a href="https://www.instagram.com/dineugarden?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="instagram fa-brands fa-instagram fa-xl text-green-900 bg-zinc-300 py-5 px-2.5 rounded-full hover:text-white shadow-lg transition ease-in-out duration-300"></i></a>
+        </div>
+        <!-- Hamburger Menu -->
+        <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 md:hidden ">
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+        </button>
+        <!-- Dropdown Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full right-2 shadow-xl">
+            <nav class="flex flex-col bg-zinc-800 bg-opacity-85 rounded-sm border-2 border-green-900">
+                <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="index.html">HOME</a>
+                <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="about.html">TENTANG </a>
+                <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="program.html">PROGRAM</a>
+                <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="article.html">ARTIKEL</a>
+                <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="contact.html">KONTAK</a>
+            </nav>
+        </div>
+    </header>
+    <div class="bg-zinc-200 py-16 md:py-20 flex flex-col gap-20 md:gap-28 lg:gap-36 text-green-900">
+        <div class="relative flex justify-center text-center items-center py-16">
+            <p class="absolute z-10 text-center top-4 md:top-2 text-sm md:text-base">Yayasan Anggur Sejahtera</p>
+            <h1 class="absolute z-10 text-white text-lg md:text-xl lg:text-3xl text-center title bg-zinc-800 p-2 px-3 md:px-8 rounded-md"><B>Bergabung Dengan Kami</B></h1>
+            <img class="absolute -z-1 top-14 w-5/6 h-[260px] md:h-[360px] object-cover rounded-sm" src="../src/gallery/home-slider-4 - Copy.jpg" alt="">
+        </div>
+        <div class="mt-48 mx-auto w-11/12 flex flex-col gap-4 pt-10 text-center border-t-4 border-green-800">
+            <p class="description md:text-base xl:text-lg text-gray-600 text-justify">We are a creative company. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis lorem cursus erat dapibus molestie. Vivamus rhoncus lacus sed metus tincidunt iaculis. Quisque vel dapibus libero. Aliquam mi arcu, molestie eget felis id, dapibus vehicula dolor. Nullam dapibus ipsum libero, quis tempor erat lobortis et. Duis gravida ultricies nisi, quis dictum lorem.</p>
+            <div class="map flex justify-center items-center">
+                <iframe class="w-full h-[65vh] rounded-md border-2 border-green-900" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.763865284392!2d107.65105357403554!3d-6.918808967716276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7ba6beb4377%3A0xd316eaaa49e4932a!2sBudidaya%20Anggur%20Bandung%3A%20Dineu%20Garden!5e0!3m2!1sid!2sid!4v1723118462731!5m2!1sid!2sid"></iframe>
+            </div>
+            <div class="form-container flex flex-col gap-4">
+                <div class="contact-info text-left flex flex-col gap-4">
+                    <p data-aos="fade-right" class="text-sm md:text-base xl:text-lg"><strong>Kontak</strong><br> Telepon Kantor: +628112343011<br> Whatsapp: <a href="https://wa.me/628112343011" class="text-purple-600" target="_blank">(Salma)</a></p>
+                    <p data-aos="fade-right" class="text-sm md:text-base xl:text-lg"><strong>Kantor</strong><br>Jl.Bougenville Raya Blok H No.4, Bandung, Jawa Barat 40291</p>
+                    <p data-aos="fade-right" class="text-sm md:text-base xl:text-lg"><strong>Jam Operasional</strong><br>Senin - Minggu / 9.00 - 18.00 WIB</p>
+                    <p data-aos="fade-right" class="text-sm md:text-base xl:text-lg"><strong>Email</strong><br> anggursejahtera.com<br> salmanfird4@outlook.com(Salman)</p>
+                </div>
+                <div class="form text-left w-full">
+                  <form id="contact-form" class="space-y-3">
+                      <input type="text" name="name" placeholder="Nama Lengkap" required class="w-full p-2 border border-gray-300 rounded-md text-4vw md:text-base">
+                      <input type="email" name="email" placeholder="Masukkan Email anda disini" required class="w-full p-2 border border-gray-300 rounded-md text-4vw md:text-base">
+                      <input type="tel" name="phone" placeholder="Masukkan Nomor HP/Whatsapp" required class="w-full p-2 border border-gray-300 rounded-md text-4vw md:text-base">
+                      <textarea name="message" placeholder="Pesan anda" required class="w-full p-2 border border-gray-300 rounded-md h-[20vh] text-4vw md:text-base"></textarea>
+                      <button type="submit" class="bg-green-900 text-gray-200 py-2 px-4 rounded-md cursor-pointer text-4vw md:text-base hover:bg-gray-100 hover:outline hover:outline-green-900 hover:text-green-900 transition-all w-full">Kirim</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-zinc-800 flex flex-col px-4 md:justify-center">
+        <div class="flex py-4 justify-center gap-4 border-b-2 border-zinc-200 w-1/2 md:w-1/3 mx-auto items-center">
+            <a href="http://www.youtube.com/@dineugarden8711"><i class="fa-brands fa-youtube fa-xl text-zinc-200"></i></a>
+            <a href="https://wa.me/628112343011"><i class="fa-brands fa-whatsapp fa-xl text-zinc-200"></i></a>
+            <a href="https://www.instagram.com/dineugarden?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram fa-xl text-zinc-200"></i></a>
+            <a href="mailto:salmanfird4@outlook.com"><i class="fa-regular fa-envelope fa-xl text-zinc-200"></i></a>
+        </div>
+        <div class="flex mb-2 mt-4 justify-center">
+            <p class="text-zinc-200 text-center text-sm md:text-base lg:text-lg">Jl. Bougenvile Blok H No.4 Antapani, Bandung, Jawa Barat 40291</p>
+        </div>
+        <div class="flex flex-col md:flex-row px-4 md:items-center md:justify-center md:gap-4 mb-4">
+            <div class="flex py-2 justify-center">
+                <div class="flex flex-row justify-center gap-6 bg-white p-4 md:p-2 rounded-sm"> 
+                    <img src="../src/gallery/sbai-logo.png" class="max-h-20 justify-center" alt="">
+                    <img src="../src/gallery/yasi-logo.png" class="max-h-20 justify-center" alt="">
+                    <img src="../src/gallery/dngn-logo.png" class="max-h-20 justify-center" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col py-4 gap-2 md:w-1/4">
+                <h1 class="text-zinc-200 text-center md:text-right text-sm lg:text-base 2xl:text-lg"><b>YAYASAN ANGGUR SEJHATERA INDONESIA</b></h1>
+                <p class=" text-zinc-200 text-center md:text-right text-sm xl:text-base">&copy; 2024 Yayasan Anggur Sejahtera. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
