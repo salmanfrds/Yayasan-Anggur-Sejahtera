@@ -8,7 +8,7 @@ const PORT = 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Middleware to serve static files from the src directory
-app.use(express.static(path.join(__dirname, 'src')));
+app.use('/src', express.static(path.join(__dirname, 'src'))); // Note the '/src' prefix
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
