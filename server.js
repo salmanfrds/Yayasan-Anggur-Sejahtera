@@ -20,7 +20,7 @@ app.get('/api/articles', (req, res) => {
         if (err) {
             return res.status(500).json({ error: 'Error reading articles file' });
         }
-        const articles = JSON.parse(data);
+        const articles = JSON.parse(data); 
         res.json(articles);
     });
 });

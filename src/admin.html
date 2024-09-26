@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Interface</title>
+
+    <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <h1>Add Article</h1>
-    <form id="articleForm">
+    <h1 class="text-center my-8">Add Article</h1>
+    <form id="articleForm" class="flex flex-col items-center gap-4">
         <input type="text" id="title" placeholder="Article Title" required>
+        <input type="text" id="author"placeholder="Enter the writer's name" required>
         <textarea id="content" placeholder="Article Content" required></textarea>
+        <textarea id="point_1" placeholder="point 1"></textarea>
+        <textarea id="point_2" placeholder="point 2"></textarea>
+        <textarea id="point_3" placeholder="point 3"></textarea>
+        <textarea id="point_4" placeholder="point 4"></textarea>
         <button type="submit">Add Article</button>
     </form>
 
@@ -17,7 +24,12 @@
         document.getElementById('articleForm').addEventListener('submit', function(e) {
             e.preventDefault(); // Prevent form submission
             const title = document.getElementById('title').value;
+            const author = document.getElementById('author').value;
             const content = document.getElementById('content').value;
+            const point_1 = document.getElementById('point_1').value;
+            const point_2 = document.getElementById('point_2').value;
+            const point_3 = document.getElementById('point_3').value;
+            const point_4 = document.getElementById('point_4').value;
 
             // Send the new article to the server
             fetch('/api/articles', {
@@ -25,7 +37,7 @@
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ title, content }),
+                body: JSON.stringify({ title, author, content, point_1, point_2, point_3, point_4 }),
             })
             .then(response => response.json())
             .then(data => {
@@ -33,6 +45,11 @@
                 // Clear the form fields
                 document.getElementById('title').value = '';
                 document.getElementById('content').value = '';
+                document.getElementById('author').value = '';
+                document.getElementById('point_1').value = '';
+                document.getElementById('point_2').value = '';
+                document.getElementById('point_3').value = '';
+                document.getElementById('point_4').value = '';
             })
             .catch(error => console.error('Error adding article:', error));
         });

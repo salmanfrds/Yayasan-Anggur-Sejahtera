@@ -1,10 +1,44 @@
 [
   {
-    "title": "test",
-    "content": "blablabla"
+    "title": "test 1",
+    "author": "salman firdaus",
+    "content": "ini adalah ujicoba test mantap"
   },
   {
-    "title": "article 2",
-    "content": "hahahahahah"
+    "title": "Uji Coba ke 2",
+    "author": "salman firdaus",
+    "content": "ini adalah ujicoba yang kedua dari  system  article yang saya buat"
+  },
+  {
+    "title": "Uji Coba ke 2",
+    "author": "salman firdaus",
+    "content": "ini adalah ujicobe  ke dua"
+  },
+  {
+    "title": "Uji Coba ke 3",
+    "author": "salman firdaus",
+    "content": "fdsafdsa",
+    "point_1": "fdasfdsa",
+    "point_2": "fdsafas",
+    "point_3": "fasfasdf",
+    "point_4": "fdsafdsa"
+  },
+  {
+    "title": "coba 4",
+    "author": "saufdsa",
+    "content": "fsafdasf",
+    "point_1": "fdsafdas",
+    "point_2": "dsafafd",
+    "point_3": "fasfdsafda`",
+    "point_4": "fdsafsafads"
+  },
+  {
+    "title": "coba 4",
+    "author": "dfsaf",
+    "content": "fdsafdas",
+    "point_1": "",
+    "point_2": "",
+    "point_3": "",
+    "point_4": ""
   }
 ]
