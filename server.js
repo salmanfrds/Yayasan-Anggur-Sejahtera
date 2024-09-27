@@ -30,6 +30,10 @@ app.post('/api/articles', (req, res) => {
     const articlesPath = path.join(__dirname, 'src', 'articles.json');
     const newArticle = req.body;
 
+    // Add a timestamp for when the article is uploaded
+    const date = new Date();
+    newArticle.uploadDate = date.toISOString().split('T')[0]; // Get only the date part
+
     fs.readFile(articlesPath, 'utf8', (err, data) => {
         if (err) {
             return res.status(500).json({ error: 'Error reading articles file' });

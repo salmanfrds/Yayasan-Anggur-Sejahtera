@@ -40,5 +40,44 @@
     "point_2": "",
     "point_3": "",
     "point_4": ""
+  },
+  {
+    "title": "fdsafsda",
+    "author": "fdsafdsa",
+    "content": "fdsafdsaf",
+    "point_1": "fdsafdasf",
+    "point_2": "fdsafdsaf",
+    "point_3": "fdasfdsaf",
+    "point_4": "fsaddasf"
+  },
+  {
+    "title": "tanggal",
+    "author": "fdafad",
+    "content": "fdafas",
+    "point_1": "fdafdas",
+    "point_2": "fdasfdas",
+    "point_3": "fasdfas",
+    "point_4": "afdafdas",
+    "uploadDate": "2024-09-27T09:30:40.026Z"
+  },
+  {
+    "title": "test tanggal",
+    "author": "dfafdas",
+    "content": "fdasfd",
+    "point_1": "fgdsafda",
+    "point_2": "fdasfdas",
+    "point_3": "fdasfdas",
+    "point_4": "fdafdasfa",
+    "uploadDate": "2024-09-27"
+  },
+  {
+    "title": "Uji Coba fitur artikel YASI",
+    "author": "Salman Firdaus",
+    "content": "ini adalah ujicoba dari fitur artikel yang nanti akan bisa diakses oleh admin, anda bisa masuk ke web admin, dan submit artikel yang anda mau",
+    "point_1": "waktu: 08.00 WIB",
+    "point_2": "lokasi: bandung",
+    "point_3": "pemateri: Salman",
+    "point_4": "link pendaftaran gform",
+    "uploadDate": "2024-09-27"
   }
 ]
