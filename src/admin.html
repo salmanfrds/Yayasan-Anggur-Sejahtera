@@ -7,19 +7,19 @@
 
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    <h1 class="text-center my-8">Add Article</h1>
-    <form id="articleForm" class="flex flex-col items-center gap-4">
-        <input type="text" id="title" placeholder="Article Title" required>
-        <input type="text" id="author"placeholder="Enter the writer's name" required>
+<body class="text-green-900">
+    <h1 class="text-center my-8">SUBMIT POST</h1>
+    <form id="articleForm" class="flex flex-col items-center gap-4 p-3">
+        <input class="border-2 border-green-900 p-2 rounded-md w-[60vw] md:w-[40vw] " type="text" id="title" placeholder="Judul" required>
+        <input class="border-2 border-green-900 p-2 rounded-md w-[60vw] md:w-[40vw] " type="text" id="author"placeholder="Penulis" required>
 
-        <textarea id="content" placeholder="Article Content" required></textarea>
-        <textarea id="point_1" placeholder="point 1"></textarea>
-        <textarea id="point_2" placeholder="point 2"></textarea>
-        <textarea id="point_3" placeholder="point 3"></textarea>
-        <textarea id="point_4" placeholder="point 4"></textarea>
+        <textarea class="border-2 p-2 rounded-md border-green-900 w-[80vw] md:w-[50vw] h-[40vh] md:h-[50vh] " id="content" placeholder="Article Content" required></textarea>
+        <textarea class="border-2 p-2 rounded-md border-green-900 w-[60vw] md:w-[40vw] h-[10vh] md:h-[10vh] " id="point_1" placeholder="tambah poin yang anda ingin tulis disini, contoh: waktu"></textarea>
+        <textarea class="border-2 p-2 rounded-md border-green-900 w-[60vw] md:w-[40vw] h-[10vh] md:h-[10vh] " id="point_2" placeholder="point 2"></textarea>
+        <textarea class="border-2 p-2 rounded-md border-green-900 w-[60vw] md:w-[40vw] h-[10vh] md:h-[10vh] " id="point_3" placeholder="point 3"></textarea>
+        <textarea class="border-2 p-2 rounded-md border-green-900 w-[60vw] md:w-[40vw] h-[10vh] md:h-[10vh] " id="point_4" placeholder="Masukan link jika diperlukan disini"></textarea>
         
-        <button type="submit">Add Article</button>
+        <button class="p-2 bg-green-800 text-white rounded-full w-72" type="submit">Submit Post</button>
     </form>
 
     <script>
