@@ -22,6 +22,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Animation on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="text-green-900">
     <header class="bg-white bg-opacity-80 backdrop-blur flex p-1 py-1 px-4 md:py-0 md:p-0 md:px-4 items-center justify-between fixed top-0 left-0 w-full z-30 shadow-md">
@@ -29,7 +33,7 @@
         <nav class="hidden md:flex gap-1">
             <a class="text-zinc-800 text-base xl:text-lg hover:text-green-900 hover:bg-gray-200 border-opacity-80 border-white hover:border-opacity-100 py-5 px-2 transition-all ease-in-out duration-200 border-b-2 hover:border-green-900" href="about.html">TENTANG KAMI</a>
             <a class="text-zinc-800 text-base xl:text-lg hover:text-green-900 hover:bg-gray-200 border-opacity-80 border-white hover:border-opacity-100 py-5 px-2 transition-all ease-in-out duration-200 border-b-2 hover:border-green-900" href="program.html">PROGRAM</a>
-            <a class="text-zinc-800 text-base xl:text-lg hover:text-green-900 hover:bg-gray-200 border-opacity-80 border-white hover:border-opacity-100 py-5 px-2 transition-all ease-in-out duration-200 border-b-2 hover:border-green-900" href="article.html">POST</a>
+            <a class="text-zinc-800 text-base xl:text-lg hover:text-green-900 hover:bg-gray-200 border-opacity-80 border-white hover:border-opacity-100 py-5 px-2 transition-all ease-in-out duration-200 border-b-2 hover:border-green-900" href="article.html">TERBARU</a>
             <a class="text-zinc-800 text-base xl:text-lg hover:text-green-900 hover:bg-gray-200 border-opacity-80 border-white hover:border-opacity-100 py-5 px-2 transition-all ease-in-out duration-200 border-b-2 hover:border-green-900" href="contact.html">KONTAK</a>
         </nav>
         <div class="hidden md:flex gap-2">
@@ -48,15 +52,15 @@
                 <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="index.html">HOME</a>
                 <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="about.html">TENTANG </a>
                 <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="program.html">PROGRAM</a>
-                <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="article.html">POST</a>
+                <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="article.html">TERBARU</a>
                 <a class="text-lg text-zinc-200 hover:bg-gray-200 hover:text-green-900 transition ease-in-out duration-200 p-6 px-12 pr-52" href="contact.html">KONTAK</a>
             </nav>
         </div>
     </header>
 
-    <div class="bg-zinc-200 py-16 md:py-[72px] flex flex-col gap-20 md:gap-28 lg:gap-36">     
+    <div class="bg-zinc-200 py-16 md:py-[72px] flex flex-col gap-20 md:gap-28 lg:gap-36 overflow-hidden">     
         <div class="flex flex-col md:flex-row w-[84%] mx-auto py-4 md:py-0 gap-6">
-            <div class="w-full md:w-1/2 flex flex-col gap-6 md:gap-0.5 lg:gap-8 md:h-full md:my-auto">
+            <div data-aos="fade-right"  class="w-full md:w-1/2 flex flex-col gap-6 md:gap-0.5 lg:gap-8 md:h-full md:my-auto">
                 <h1 class="title mx-auto md:mx-0 text-base text-center md:text-left lg:text-2xl"><b>Yayasan Anggur <br> Sejahtera Indonesia</b></h1>
                 <p class="text-sm text-justify lg:text-base lg:text-left lg:w-11/12">
                     Yayasan ini didirikan di Bandung pada tahun 2022, dengan Jumlah keanggotaan 
@@ -71,7 +75,7 @@
             </div>
             <div class="w-full md:w-1/2 shadow-lg"><img class="rounded-md" src="../src/gallery/about-yasi.jpg" alt=""></div>
         </div>
-        <div class="w-full bg-gray-100 py-8 md:py-12 lg:py-16">
+        <div data-aos="fade-left" class="w-full bg-gray-100 py-8 md:py-12 lg:py-16">
             <div class="flex flex-row w-11/12 mx-auto">
                 <div class="flex flex-col w-1/3 h-full my-auto text-lg md:text-2xl gap-1 border-l-2 border-green-900">
                     <h1 class="text-center"><b>VISI</b></h1>
@@ -88,22 +92,22 @@
         <div class="flex flex-col justify-center items-center gap-12"> 
             <div class="text-lg md:text-2xl w-full text-center"><b>Capaian</b></div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4  mx-auto">
-                <div class="text-center w-4/5 flex flex-col gap-2 md:gap-3 lg:gap-4 rounded-sm mx-auto">
+                <div data-aos="zoom-in" class="text-center w-4/5 flex flex-col gap-2 md:gap-3 lg:gap-4 rounded-sm mx-auto">
                     <img class="w-5/6 md:w-3/4 mx-auto shadow-lg" src="../src/gallery/about-mitra.jpg" alt="">
                     <h1><b class="text-lg md:text-xl lg:text-3xl">30</b><br>
                     <p class="text-sm lg:text-base">Mitra</p></h1>
                 </div>
-                <div class="text-center w-4/5 flex flex-col gap-2 md:gap-3 lg:gap-4 rounded-sm mx-auto">
+                <div data-aos="zoom-in" class="text-center w-4/5 flex flex-col gap-2 md:gap-3 lg:gap-4 rounded-sm mx-auto">
                     <img class="w-5/6 md:w-3/4 mx-auto shadow-lg" src="../src/gallery/about-anggota.jpg" alt="">
                     <h1><b class="text-lg md:text-xl lg:text-3xl">5,000</b><br>
                     <p class="text-sm lg:text-base">Anggota</p></h1>
                 </div>
-                <div class="text-center w-4/5 flex flex-col gap-2 md:gap-3 lg:gap-4 rounded-sm mx-auto">
+                <div data-aos="zoom-in" class="text-center w-4/5 flex flex-col gap-2 md:gap-3 lg:gap-4 rounded-sm mx-auto">
                     <img class="w-5/6 md:w-3/4 mx-auto shadow-lg" src="../src/gallery/about-pohon.jpg" alt="">
                     <h1><b class="text-lg md:text-xl lg:text-3xl">10,000</b><br>
                     <p class="text-sm lg:text-base">Pohon</p></h1>
                 </div>
-                <div class="text-center w-4/5 flex flex-col gap-2 md:gap-3 lg:gap-4 rounded-sm mx-auto">
+                <div data-aos="zoom-in" class="text-center w-4/5 flex flex-col gap-2 md:gap-3 lg:gap-4 rounded-sm mx-auto">
                     <img class="w-5/6 md:w-3/4 mx-auto shadow-lg" src="../src/gallery/about-pelatihan.jpg" alt="">
                     <h1><b class="text-lg md:text-xl lg:text-3xl">100</b><br>
                     <p class="text-sm lg:text-base">Pelatihan</p></h1>
@@ -116,7 +120,7 @@
                 <div class="w-3/5 md:w-1/3 mx-auto">
                     <img class="md:w-11/12 rounded-sm mx-auto" src="../src/gallery/about-umi.jpg" alt="">
                 </div>
-                <div class="md:w-2/3 flex flex-col gap-1 md:gap-2 lg:gap-8 mx-auto">
+                <div data-aos="fade-left" class="md:w-2/3 flex flex-col gap-1 md:gap-2 lg:gap-8 mx-auto">
                     <h1 class="text-base md:text-xl"><b>Dini Wahyuni S.S</b></h1>
                     <p class=" text-sm lg:text-base text-justify">
                         Saya, Dini Wahyuni selaku pendiri Yayasan Budidaya Anggur Indonesia berdedikasi untuk meningkatkan pertumbuhan dan keberlanjutan budidata anggur di tanah air.
@@ -157,5 +161,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        AOS.init({
+            once: true,
+            offset: 200,
+        });
+    </script>
 </body>
 </html>

@@ -79,3 +79,29 @@ const swiperProgram = new Swiper('.swiper-program', {
       },
     }
 });
+
+emailjs.init('vWfmmP-qCso5vXcK1');
+
+function sendEmail(event) {
+    event.preventDefault();
+
+    var details = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        message: document.getElementById('message').value,
+    };
+
+    emailjs.send('service_haxxwoh', 'template_wiqemlk', details).then(
+        (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('email telah terkirim !');
+        },
+        (error) => {
+            console.log('FAILED...', error);
+            alert('maaf, terjadi error, silahkan kontak kami langsung ke email atau nomor tertera!!');
+        }
+    );
+}
+
+document.getElementById('contact-form').addEventListener('submit', sendEmail);
