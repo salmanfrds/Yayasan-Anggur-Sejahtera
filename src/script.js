@@ -64,18 +64,15 @@ const swiperProgram = new Swiper('.swiper-program', {
 
     // Default parameters
     slidesPerView: 1,
-    spaceBetween: 10,
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 320px
       768: {
-        slidesPerView: 2,
-        spaceBetween: 20
+        slidesPerView: 2
       },
       // when window width is >= 480px
       1024: {
-        slidesPerView: 3,
-        spaceBetween: 30
+        slidesPerView: 3
       },
     }
 });
