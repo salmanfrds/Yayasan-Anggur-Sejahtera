@@ -86,6 +86,7 @@ function sendEmail(event) {
     event.preventDefault();
 
     var details = {
+        to_name: 'Yayasan Anggur Sejahtera',
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
