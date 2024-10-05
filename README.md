@@ -1,8 +1,8 @@
 **YAYASAN ANGGUR SEJAHTERA INDONESIA**
-This project is a website built with modern web technologies. Below is an overview of the setup and features used in this project.
+- This project is a website built with modern web technologies. Below is an overview of the setup and features used in this project.
 
 **Overview**
-This project features a dynamic, responsive website built using HTML, CSS, and JavaScript, incorporating Tailwind CSS for utility-first styling and Express.js as a simple backend server. The project is hosted on a DigitalOcean droplet, with source code managed through GitHub, and a domain name provided by Hostinger.
+- This project features a dynamic, responsive website built using HTML, CSS, and JavaScript, incorporating Tailwind CSS for utility-first styling and Express.js as a simple backend server. The project is hosted on a DigitalOcean droplet, with source code managed through GitHub, and a domain name provided by Hostinger.
 
 **Features**
 - Modern Design: Styled using Tailwind CSS to create a responsive, clean interface that works across different screen sizes.
