@@ -18,6 +18,6 @@
 - Domain Registrar: Hostinger
 
 **Contributing**
-If you want to contribute, feel free to fork the repository and create a pull request. Any suggestions are welcome!
+- If you want to contribute, feel free to fork the repository and create a pull request. Any suggestions are welcome!
 
-Website Link: www.anggursejahteraindonesia.com
+**Website Link**: www.anggursejahteraindonesia.com
